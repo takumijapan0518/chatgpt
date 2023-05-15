@@ -2,10 +2,8 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
-  <link rel="stylesheet" href="style.css">
-  <title>sample</title>
+  <title>00.v</title>
 </head>
-<body class="gothic">
   <h1>例題　00.html</h1>
   <table border="0">
     <tbody>
@@ -16,34 +14,10 @@
       <tr>
         <td>
           <iframe src="00.v" height="320" width="500">
-            #document
-            <html>
-              <head>
-                <meta name="color-scheme" content="light dark">
-              </head>
-              <body>
-                <pre style="word-wrap: break-word; white-space: pre-wrap;"> ==$0
-                "`timescale 1ms/1ms module testbench00; reg x,y; wire z1; gate01 g01(x,y,z1); initial bigin $dumpfile ("tmp.vcd"); $dumpvars(); 
-                $monitor ("%t %b %b %b",$time,x,y,z1); #0 x=1'b0; y=1'b0; #100 y=1'b1; #100 x=1'b1; y=1'b0; #100 y=1'b1; #100 y=1'b0; y=1'b0; #100 $finish; end endmodule "
-                </pre>
-              </body>
-            </html>
           </iframe>
         </td>
         <td>
           <iframe src="testbench00.v" height="320" width="500">
-            #document
-            <html>
-              <head>
-                <meta name="color-scheme" content="light dark">
-              </head>
-              <body>
-                <pre style="word-wrap: break-word; white-space: pre-wrap;"> ==$0
-                "`timescale 1ms/1ms module testbench00; reg x,y; wire z1; gate01 g01(x,y,z1); initial bigin $dumpfile ("tmp.vcd"); $dumpvars(); 
-                $monitor ("%t %b %b %b",$time,x,y,z1); #0 x=1'b0; y=1'b0; #100 y=1'b1; #100 x=1'b1; y=1'b0; #100 y=1'b1; #100 y=1'b0; y=1'b0; #100 $finish; end endmodule "
-                </pre>
-              </body>
-            </html>
           </iframe>
         </td>
       </tr>
